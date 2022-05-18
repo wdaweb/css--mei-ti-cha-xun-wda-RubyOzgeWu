@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+#wrap {
+    width: 100%;
+}
+
+#container {
+    width: 90%;
+    /* height: 2000px; */
+    margin: auto;
+    /* background: lightyellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+
+.page {
+    width: 100%;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* border: 1px solid black; */
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#container .page:first-child {
+    text-align: center;
+}
+
+#container .page .col:first-child {
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    background: #000;
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* 泰山職訓 */
+
+.page.page-1 h3 {
+    margin: 0;
+    font-weight: 200;
+}
+
+
+/* media 768 */
+
+@media(min-width:768px) {
+    #container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .page {
+        width: 43%;
+        margin: 0 1.5rem;
+    }
+
+}
+
+/* media 992 */
+@media(min-width:1200px) {
+    #container {
+        position: relative;
+        height: 100vh;
+    }
+
+    #container p,
+    #container .page:first-child hr {
+        display: none;
+    }
+
+    .page{
+        /* background: lightblue; */
+        /* border: 1px solid black; */
+        text-align: center;
+    }
+    .page img{
+        width: 200px;
+        height: 200px;
+    }
+    hr{
+        position: absolute;
+    }
+
+
+
+    /* 泰山 */
+    .page:first-child{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    /* HTML */
+    .page-2{
+        position: absolute;
+        left: 5%;
+    }
+
+    .page-2 hr{
+        transform: rotate(30deg);
+        width: 28%;
+        top:65%;
+        left: 60%;
+    }
+
+    /* CSS */
+    .page-3{
+        position: absolute;
+        left: 50%;
+    }
+    .page-3 hr{
+        transform: rotate(-30deg);
+        width: 25%;
+        top:65%;
+        left: 15%;
+    }
+
+    /* JavaScript */
+    .page-4{
+        position: absolute;
+        /* background: pink; */
+        top: 15%;
+        left: -15%;
+    }
+    .page-4 hr{
+        transform: rotate(5deg);
+        width: 65%;
+        top:65%;
+        left: 65%;
+    }
+
+    /* Jquery */
+    .page-5{
+        position: absolute;
+        /* background: pink; */
+        top: 48%;
+        left: -9%;
+    }
+
+    .page-5 hr{
+        transform: rotate(-10deg);
+        width: 50%;
+        top:20%;
+        left: 65%;
+    }
+
+    /* Bootstrap */
+    .page-6{
+        position: absolute;
+        bottom: -4%;
+        left: 5%;
+    }
+    .page-6 hr{
+        transform: rotate(-30deg);
+        width: 20%;
+        top:5%;
+        left: 55%;
+    }
+    /* Sass */
+    .page-7{
+        position: absolute;
+        bottom: -2%;
+        right: -5%;
+    }
+    .page-7 hr{
+        transform: rotate(220deg);
+        width: 40%;
+        top:-15%;
+        left: -5%;
+    }
+
+    /* vue */
+    .page-8{
+        position: absolute;
+        right: -15%;
+        top: 35%;
+    }
+    .page-8 hr{
+        transform: rotate(180deg);
+        width: 50%;
+        top:20%;
+        left: -20%;
+    }
+
+
+
+}
